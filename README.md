@@ -5,6 +5,8 @@ Function to create require.js contexts that share modules with parent contexts
 (inherit from other contexts), but still have their own modules. It's like a
 prototype chain for require.js contexts.
 
+[![NPM](https://nodei.co/npm/rjs-subcontext.png?compact=true)](https://nodei.co/npm/rjs-subcontext)
+
 ## Usage
 
 ```
@@ -47,6 +49,14 @@ Now, `require()` does the followng:
    loaded from the Libraries context.
  * `require({ context: 'Libraries' }, [ 'handlebars' ])` loads "handlebars" from
    the Libraries context.
+
+## Building
+
+`rjs-subcontext` uses Babel:
+
+```
+npm run babel
+```
 
 ## License
 
