@@ -9,7 +9,7 @@ prototype chain for require.js contexts.
 
 ## Usage
 
-```
+```javascript
 const createSubContext = require('rjs-subcontext')
 
 createSubContext('subcontext_name')
@@ -27,6 +27,15 @@ through the child context instead.
 ## #AnotherExample
 
 A simple, contrived app with a custom view layer based on jQuery and Handlebars:
+
+```javascript
+// top-level libraries context
+require({ context: 'Libraries' })
+createSubContext('Helpers', 'Libraries')
+createSubContext('Views', 'Helpers')
+```
+
+With module definitions:
 
  * Libraries context:
    * `jquery`
