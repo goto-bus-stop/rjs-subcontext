@@ -1,0 +1,16 @@
+{ "name": "rjs-subcontext"
+, "description": "Context inheritance for require.js: load shared dependencies from parent contexts"
+, "version": "0.1.0"
+, "license": "MIT"
+, "keywords": [ "requirejs", "require.js", "context", "inheritance" ]
+, "repository": "goto-bus-stop/rjs-subcontext"
+, "bugs": "https://github.com/goto-bus-stop/rjs-subcontext/issues"
+, "author": "René Kooi <rene@kooi.me>"
+, "files": [ "index.js", "LICENSE", "package.json", "README.md" ]
+, "devDependencies":
+  { "babel": "5.x"
+  , "mocha": "2.x"
+  , "requirejs": "^2.1.18"}
+, "scripts":
+  { "babel": "./node_modules/.bin/babel --modules umd --out-file index.js src"
+  , "test": "./node_modules/.bin/mocha --compilers js:babel/register" } }
