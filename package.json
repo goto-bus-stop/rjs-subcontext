@@ -1,6 +1,6 @@
 { "name": "rjs-subcontext"
 , "description": "Context inheritance for require.js: load shared dependencies from parent contexts"
-, "version": "0.1.1"
+, "version": "0.1.2"
 , "license": "MIT"
 , "keywords": [ "requirejs", "require.js", "context", "inheritance" ]
 , "repository": "goto-bus-stop/rjs-subcontext"
