@@ -12,5 +12,6 @@
   , "mocha": "2.x"
   , "requirejs": "^2.1.18"}
 , "scripts":
-  { "babel": "./node_modules/.bin/babel --modules umd --out-file index.js src"
+  { "prepublish": "npm run-script babel"
+  , "babel": "./node_modules/.bin/babel --modules umd --out-file index.js src"
   , "test": "./node_modules/.bin/mocha --compilers js:babel/register" } }
