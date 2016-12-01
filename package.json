@@ -8,8 +8,8 @@
 , "author": "René Kooi <rene@kooi.me>"
 , "files": [ "index.js", "LICENSE", "package.json", "README.md" ]
 , "devDependencies":
-  { "babel": "5.x"
-  , "mocha": "2.x"
+  { "babel": "^6.5.2"
+  , "mocha": "^3.2.0"
   , "requirejs": "^2.1.18"}
 , "scripts":
   { "prepublish": "npm run-script babel"
